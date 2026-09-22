@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 function Actions(){
-const [likes, setLikes] = useState(15);
-const [reposts, setReposts] = useState(4);
+const [likes, setLikes] = useState(0);
+const [reposts, setReposts] = useState(0);
     
     return(
         <div className="actions">
