@@ -46,6 +46,12 @@ let ProfileCard = () => {
 
     }
 
+    function deletePost(id){
+        setPosts(
+            posts.filter((post) => post.id !== id)
+        );
+    }
+
     return (
         < section className='profile-card' >
             <div className='profile'>
@@ -87,12 +93,16 @@ let ProfileCard = () => {
                 posts.map(post => (
                     <Post
                         key={post.id}
+                        
+                        id={post.id}
 
                         author={post.author}
 
                         title={post.title}
 
                         text={post.text}
+
+                        onDelete={deletePost}
                     />
                 ))
             }
