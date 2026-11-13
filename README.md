@@ -1,16 +1,42 @@
-# React + Vite
+Mini Social Network 🐇
+Mini Social Network — это простой учебный проект, реализующий базовый функционал социальной сети. Здесь можно делиться короткими постами, ставить лайки и делать репосты, а также удалять свои записи.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+Создание постов: Добавляйте новые записи, указывая заголовок и текст.
 
-Currently, two official plugins are available:
+Лента постов: Все опубликованные посты отображаются в профиле пользователя.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Лайки и репосты: Взаимодействуйте с постами, увеличивая счётчики лайков и репостов.
 
-## React Compiler
+Удаление постов: Удаляйте свои записи из ленты одним кликом.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Адаптивный интерфейс: Благодаря Vite и React приложение быстро работает и легко настраивается.
 
-## Expanding the ESLint configuration
+🚀 Installation
+Убедитесь, что у вас установлен Node.js (версия 18 или выше).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Склонируйте репозиторий и перейдите в папку проекта:
+
+bash
+git clone https://github.com/Krasava900/React-vite-project.git
+cd React-vite-project
+Установите зависимости и запустите сервер для разработки:
+
+bash
+npm install
+npm run dev
+После этого приложение будет доступно по адресу http://localhost:5173 (порт может отличаться, следите за выводом в терминале).
+
+💡 Usage
+Пример 1 (Создание поста): Введите заголовок и текст в соответствующие поля формы и нажмите кнопку «Опубликовать». Новый пост сразу появится в ленте.
+
+Пример 2 (Взаимодействие): Нажмите на кнопку с сердечком (❤), чтобы поставить лайк, или на кнопку репоста, чтобы поделиться записью. Чтобы удалить свой пост, нажмите кнопку «Удалить» под ним.
+
+🛠️ Built With
+React 19 — библиотека для создания пользовательских интерфейсов.
+
+Vite — инструмент для сборки и разработки, обеспечивающий мгновенную горячую замену модулей (HMR).
+
+JavaScript (ES6+) — основной язык программирования.
+
+CSS — для стилизации компонентов (файлы App.css, index.css).
